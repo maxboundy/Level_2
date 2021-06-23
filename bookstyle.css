@@ -1,0 +1,148 @@
+body {
+    margin: auto;
+    padding: 50px;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* ---- Set up site grid ---- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 300px 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo banner banner"
+        "nav nav nav"
+        "main main side"
+        "footer footer footer";
+    grid-gap: 4px;
+}
+
+/* ---- End of grid setup ---- */
+
+
+/* -000- Area styling -000- */
+
+.box {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+/* Area colouring... */
+
+/* logo, banner and footer background are the same */
+.logo, .banner, .footer {
+    background-color: #885566;  /* dark purple */
+}
+
+/* Set font on dark areas to white */
+.logo, .banner, .side, .footer {
+    color: #fff;
+}
+
+/* Area specifics */
+
+.logo {
+    grid-area: logo;
+    padding: 0;
+    height: 199px;
+    width: 300px;
+    background-image: url(Images/logo_v2.png);
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #ddbb99;  /* Pale brown */
+    font-size: 150%;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: #ffeedd;  /* very pale pink */
+    border: solid 1px #ddbb99;
+}
+
+.side {
+    grid-area: side;
+    background-color: #aa8798;  /* lilac */
+    }
+
+.footer {
+    grid-area: footer;
+    text-align: right;
+}
+
+/* -000- End of area styling -000- */
+
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Navigation Links */
+.nav a {font-weight: bold;}
+.nav a:link, .nav a:visited {color: #885566;} /*purple */
+.nav a:hover {color: #604830; text-decoration: none;} /* chocolate brown */
+
+
+/* links in page */
+a {font-weight: bold;}
+a:link{color: #885566;} /*purple */
+a:visited{color: #907860;} /* grey / brown */
+a:hover{color: #604830;}    /* chocolate brown */
+
+/* links in side bar */
+.side a:link{color: #ffeedd;}    /* pale pink */
+.side a:visited{color: #ededed;} /* light gray */
+.side a:hover{color: #604830;}   /* brown */
+
+/* Contact Form Styling */
+.contact {
+    width: 100%;
+}
+
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 85%;
+    height: auto;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);     
+}
+
+.center_image {
+    text-align: center;
+}
+
+/* Sub Heading Formatting */
+.sub_heading {
+    font-family: 'Ubuntu', sans-serif;
+    color: #593849; /* purple */
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
