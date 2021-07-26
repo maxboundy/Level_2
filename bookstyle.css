@@ -13,7 +13,7 @@ body {
     grid-template-columns: 300px 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "logo banner banner"
+        "banner banner banner"
         "nav nav nav"
         "main main side"
         "footer footer footer";
