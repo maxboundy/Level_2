@@ -15,9 +15,9 @@ body {
     grid-template-areas: 
         "banner banner banner"
         "nav nav nav"
-        "main main side"
+        "side main main"
         "footer footer footer";
-    grid-gap: 4px;
+    grid-gap: 1px;
 }
 
 /* ---- End of grid setup ---- */
@@ -27,57 +27,61 @@ body {
 
 .box {
     padding: 20px;
-    border-radius: 10px;
     background-color: #ddd;
 }
 
 /* Area colouring... */
 
 /* logo, banner and footer background are the same */
-.logo, .banner, .footer {
-    background-color: #885566;  /* dark purple */
+.footer {
+    background-color: #D73F2E;  /* dark Red */
 }
 
 /* Set font on dark areas to white */
-.logo, .banner, .side, .footer {
+.banner, .side, .footer {
     color: #fff;
 }
 
 /* Area specifics */
 
-.logo {
-    grid-area: logo;
-    padding: 0;
-    height: 199px;
-    width: 300px;
-    background-image: url(Images/logo_v2.png);
-}
+
 
 .banner {
     grid-area: banner;
+    background-color: #6C6C6C; /* Grey */
+  
+}
+
+.logo {
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+  height:120%;
 }
 
 .nav {
     grid-area: nav;
-    background-color: #ddbb99;  /* Pale brown */
+    background-color: #6C6C6C;  /* Pale brown */
     font-size: 150%;
     text-align: center;
 }
 
 .main {
     grid-area: main;
-    background-color: #ffeedd;  /* very pale pink */
+    background-color: #6C6C6C;  /* very pale pink */
     border: solid 1px #ddbb99;
 }
 
 .side {
     grid-area: side;
-    background-color: #aa8798;  /* lilac */
+    background-color: #6C6C6C;  /* lilac */
     }
 
 .footer {
     grid-area: footer;
     text-align: right;
+    background-color: #6C6C6C;
 }
 
 /* -000- End of area styling -000- */
@@ -88,8 +92,8 @@ h1, h2, h3, h4 {
 
 /* Navigation Links */
 .nav a {font-weight: bold;}
-.nav a:link, .nav a:visited {color: #885566;} /*purple */
-.nav a:hover {color: #604830; text-decoration: none;} /* chocolate brown */
+.nav a:link, .nav a:visited {color: white;} /*white */
+.nav a:hover {color: #D73F2E; text-decoration: none;} /* red */
 
 
 /* links in page */
@@ -126,23 +130,3 @@ a:hover{color: #604830;}    /* chocolate brown */
     color: #593849; /* purple */
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
